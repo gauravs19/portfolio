@@ -240,7 +240,7 @@ p {
 .newsletter-block {
     background-color: #f8fafc;
     border: 1px solid var(--border-light);
-    padding: 2rem 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
 }
@@ -254,7 +254,7 @@ p {
 .newsletter-content .subtitle {
     color: var(--accent);
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.1em;
@@ -262,7 +262,7 @@ p {
 
 .newsletter-content p {
     max-width: 600px;
-    margin: 0 auto 2.5rem auto;
+    margin: 0 auto 1.5rem auto;
     font-size: 1.1rem;
 }
 
@@ -289,11 +289,11 @@ p {
 /* Contact */
 .contact-block {
     text-align: center;
-    padding: 2rem 0;
+    padding: 0;
 }
 
 .contact-block .links {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     gap: 3rem;
     justify-content: center;
@@ -314,7 +314,7 @@ p {
 
 /* Utilities */
 .section {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 /* More vertical whitespace */
