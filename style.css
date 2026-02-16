@@ -60,7 +60,7 @@ h1 {
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: -0.03em;
-    margin: 4rem 0 1.5rem 0;
+    margin: 2rem 0 1rem 0;
     color: var(--text-primary);
 }
 
@@ -83,7 +83,7 @@ p {
 
 /* Hero Section */
 .hero {
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 }
 
 .summary {
@@ -120,12 +120,12 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* Wider cards */
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .project-card {
     border: 1px solid var(--border-light);
-    padding: 2.5rem;
+    padding: 1.5rem;
     /* More padding */
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -179,7 +179,7 @@ p {
 .three-col {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 4rem;
+    gap: 2rem;
     /* More breathing room */
 }
 
@@ -203,7 +203,7 @@ p {
     display: grid;
     grid-template-columns: 180px 1fr;
     /* Wider date column */
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     /* More spacing between jobs */
 }
 
@@ -240,7 +240,7 @@ p {
 .newsletter-block {
     background-color: #f8fafc;
     border: 1px solid var(--border-light);
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 8px;
     text-align: center;
 }
@@ -289,7 +289,7 @@ p {
 /* Contact */
 .contact-block {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .contact-block .links {
@@ -314,7 +314,7 @@ p {
 
 /* Utilities */
 .section {
-    padding: 7rem 0;
+    padding: 3rem 0;
 }
 
 /* More vertical whitespace */
