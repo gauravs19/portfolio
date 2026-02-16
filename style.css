@@ -40,6 +40,7 @@ h1 {
     color: var(--accent-color);
     background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -111,8 +112,13 @@ h2 {
     animation: fadeIn 0.8s forwards;
 }
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
 
 @keyframes fadeIn {
     to {
