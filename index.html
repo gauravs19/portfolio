@@ -4,44 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Sharma | Solutions Architect</title>
+    <title>Gaurav Sharma | Architect & Leader</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+
+    <nav class="navbar fade-in">
+        <div class="container nav-content">
+            <span class="logo">GS.</span>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#philosophy">Approach</a>
+                <a href="#experience">History</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="container">
-            <h1 class="fade-in">Hi, I'm <span class="highlight">Gaurav Sharma</span></h1>
-            <p class="subtitle fade-in delay-1">Solutions Architect & Hands-on Technologist</p>
-            <p class="contact-info fade-in delay-1">
-                <a href="mailto:gaurav.x.sharma19@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/gauravs19" target="_blank"><i class="fab fa-linkedin"></i>
-                    LinkedIn</a>
-            </p>
-            <div class="summary fade-in delay-2">
-                <p>Hands-on architect with over 16 years of experience in Cloud native development, Digital
-                    Transformation, and Product Engineering of high-scale distributed systems.</p>
+            <h1 class="fade-in">Architecting scalable systems <br> for the connected world.</h1>
+            <div class="summary fade-in delay-1">
+                <p>I am <strong>Gaurav Sharma</strong>, a Solutions Architect with 16+ years of experience building
+                    cloud-native distributed systems, leading digital transformation, and mentoring high-performance
+                    engineering teams.</p>
+            </div>
+            <div class="tech-stack fade-in delay-2">
+                <span>Java/Scala</span>
+                <span>Cloud Native</span>
+                <span>Distributed Systems</span>
+                <span>IoT & Data</span>
             </div>
         </div>
     </header>
 
-    <section id="skills" class="section">
+    <section id="work" class="section">
         <div class="container">
-            <h2>Technical Proficiency</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <p>Java, Scala, JavaScript</p>
+            <h2 class="section-title">Selected Work</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>IoT Scale Management</h3>
+                        <p class="project-role">Lead Architect @ GlobalLogic</p>
+                        <p class="project-desc">Designed a multi-tenant BMS solution handling over <strong>100k+
+                                devices</strong> securely using Azure IoT Hub and Edge SDKs.</p>
+                        <ul class="project-tags">
+                            <li>Azure IoT</li>
+                            <li>Security</li>
+                            <li>Scalability</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Enterprise Rule Engine</h3>
+                        <p class="project-role">Architect @ GlobalLogic</p>
+                        <p class="project-desc">Built a custom rule engine processing <strong>100k+ intervention
+                                records</strong> with 200+ attributes for automated asset maintenance.</p>
+                        <ul class="project-tags">
+                            <li>Data Engineering</li>
+                            <li>Automation</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3>Financial Reliability</h3>
+                        <p class="project-role">SDE 2 @ American Express</p>
+                        <p class="project-desc">Led cloud adoption initiatives reducing security vulnerabilities by 50%
+                            and saved <strong>$11M USD</strong> via strategic milestone delivery.</p>
+                        <ul class="project-tags">
+                            <li>Cloud Security</li>
+                            <li>Cost Optimization</li>
+                            <li>FinTech</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Engineering Approach</h2>
+            <div class="grid three-col">
+                <div class="feature-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>System Design</h3>
+                    <p>Focus on loosely coupled, highly cohesive microservices architectures that scale horizontally.
+                    </p>
                 </div>
-                <div class="card">
-                    <h3><i class="fas fa-layer-group"></i> Technologies</h3>
-                    <p>Micro-Services, Spring, Data Engineering, Spark, Databricks, ETL, Talend, AWS, Azure</p>
+                <div class="feature-item">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Leadership</h3>
+                    <p>Believer in servant leadership, mentoring engineers through structured OKRs and career
+                        frameworks.</p>
                 </div>
-                <div class="card">
-                    <h3><i class="fas fa-industry"></i> Domains</h3>
-                    <p>Financial Services, WFM, Ed-Tech, Manufacturing, Energy, EAM, BMS, IoT Systems</p>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Reliability</h3>
+                    <p>Building resilience into systems from day one via rigorous testing, observability, and
+                        security-first design.</p>
                 </div>
             </div>
         </div>
@@ -49,116 +118,68 @@
 
     <section id="experience" class="section">
         <div class="container">
-            <h2>Professional Experience</h2>
-
-            <article class="job-card fade-in">
-                <div class="job-header">
-                    <h3>GlobalLogic</h3>
-                    <span class="role">Solutions Architect</span>
-                    <span class="date">July 2019 – Present</span>
+            <h2 class="section-title">Career History</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">2019 - Present</span>
+                    <div class="role-details">
+                        <h3>Solutions Architect</h3>
+                        <span class="company">GlobalLogic</span>
+                        <p>Leading architecture for IoT and EAM solutions, focusing on Azure cloud, GenAI prototypes,
+                            and performance optimization.</p>
+                    </div>
                 </div>
-                <ul class="job-details">
-                    <li>Led architecture and delivery of a multi-tenant IoT-based Building Management System (BMS) using
-                        Azure IoT Hub, DPS, and edge SDKs (100K+ devices).</li>
-                    <li>Designed a custom rule engine in an Enterprise Asset Management (EAM) solution processing 100K+
-                        intervention records.</li>
-                    <li>Developed a Java-based k-means clustering solution for intervention classification.</li>
-                    <li>Initiated GenAI-driven prototypes for asset maintenance efficiency.</li>
-                    <li>Designed a multi-tenant configuration management platform for scalable enterprise data handling.
-                    </li>
-                    <li>Owned full-stack responsibilities across architecture, security, DevOps, and cloud
-                        infrastructure (Azure).</li>
-                </ul>
-            </article>
-
-            <article class="job-card fade-in">
-                <div class="job-header">
-                    <h3>Tavant Technologies</h3>
-                    <span class="role">Technical Manager / Architect</span>
-                    <span class="date">Aug 2017 – July 2019</span>
+                <div class="timeline-item">
+                    <span class="year">2017 - 2019</span>
+                    <div class="role-details">
+                        <h3>Technical Manager / Architect</h3>
+                        <span class="company">Tavant Technologies</span>
+                        <p>Led cross-functional teams for Next-Gen IoT apps, implemented SQMS (CMMI L5), and drove API
+                            automation.</p>
+                    </div>
                 </div>
-                <ul class="job-details">
-                    <li>Led two cross-functional teams to develop a next-gen IoT application.</li>
-                    <li>Authored solution architecture documents and UML-based low-level designs.</li>
-                    <li>Implemented SQMS processes leading to CMMI Level 5 audit success.</li>
-                    <li>Initiated API automation, increasing test coverage to 80%+.</li>
-                    <li>Transitioned release cycle from monthly to weekly; managed Angular upgrade (v2 to v8).</li>
-                </ul>
-            </article>
-
-            <article class="job-card fade-in">
-                <div class="job-header">
-                    <h3>American Express</h3>
-                    <span class="role">SDE 2</span>
-                    <span class="date">Dec 2015 – Aug 2017</span>
+                <div class="timeline-item">
+                    <span class="year">2015 - 2017</span>
+                    <div class="role-details">
+                        <h3>SDE 2</h3>
+                        <span class="company">American Express</span>
+                        <p>Led international rollouts, cloud adoption strategies, and major cost-saving initiatives
+                            ($11M impact).</p>
+                    </div>
                 </div>
-                <ul class="job-details">
-                    <li>Led production rollouts to three countries for a user-base of over 3000 users.</li>
-                    <li>Saved 11 M USD after third milestone delivery over a period of one year.</li>
-                    <li>Built a multilingual chatbot app as part of AmEx technology hackathon.</li>
-                    <li>Started cloud adoption on AmEx Datacenters, reducing security vulnerabilities by 50%.</li>
-                    <li>Working on ADM integration to consume REST web services.</li>
-                </ul>
-            </article>
-
-            <article class="job-card fade-in">
-                <div class="job-header">
-                    <h3>Sopra-Steria</h3>
-                    <span class="role">Technical Lead</span>
-                    <span class="date">Dec 2013 – Dec 2015</span>
+                <div class="timeline-item">
+                    <span class="year">2013 - 2015</span>
+                    <div class="role-details">
+                        <h3>Technical Lead</h3>
+                        <span class="company">Sopra-Steria</span>
+                        <p>Managed transition for 20+ applications, complex JBOSS migrations, and performance tuning.
+                        </p>
+                    </div>
                 </div>
-                <ul class="job-details">
-                    <li>Led transition for a portfolio of over 20 applications.</li>
-                    <li>Developed multiple full-stack use-cases on Java/JSP applications.</li>
-                    <li>Integration with external component MADCS for SOAP-based web services.</li>
-                    <li>Resolved complex JBOSS migration, GC, and JVM optimization issues.</li>
-                </ul>
-            </article>
-
-            <article class="job-card fade-in">
-                <div class="job-header">
-                    <h3>Infosys Technologies Ltd.</h3>
-                    <span class="role">Technology Analyst | Software Engineer</span>
-                    <span class="date">Dec 2007 – Dec 2013</span>
-                </div>
-                <ul class="job-details">
-                    <li>Collaborated with US/offshore teams for AmEx vPayment application architecture.</li>
-                    <li>Implemented versioning rules and Vordel code base change management.</li>
-                    <li>Developed JMS queues and MDBs for External Interface modules.</li>
-                </ul>
-            </article>
-
-        </div>
-    </section>
-
-    <section id="certifications" class="section alt-bg">
-        <div class="container">
-            <h2>Certifications & Education</h2>
-            <div class="grid">
-                <div class="card item-list">
-                    <h3>Certifications</h3>
-                    <ul>
-                        <li>GL’s Technical Architect Academy (2022)</li>
-                        <li>Certified SAFe Agilist (2021)</li>
-                        <li>PMP Training (2018)</li>
-                        <li>Certified Scrum Master (2016)</li>
-                        <li>ITIL Foundation Certificate (2016)</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Education</h3>
-                    <p><strong>Bachelor of Technology (EC)</strong><br>
-                        UP Technical University (2007)</p>
+                <div class="timeline-item">
+                    <span class="year">2007 - 2013</span>
+                    <div class="role-details">
+                        <h3>Technology Analyst</h3>
+                        <span class="company">Infosys</span>
+                        <p>Core development for AmEx vPayment, JMS/MDB implementation, and architectural planning.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Gaurav Sharma. Built for GitHub Pages.</p>
+    <section id="contact" class="section">
+        <div class="container footer-content">
+            <div class="contact-block">
+                <h2>Let's Connect</h2>
+                <p>Open for consulting and architectural discussions.</p>
+                <div class="links">
+                    <a href="mailto:gaurav.x.sharma19@gmail.com">gaurav.x.sharma19@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/gauravs19" target="_blank">LinkedIn Profile</a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
 
     <script src="script.js"></script>
 </body>
