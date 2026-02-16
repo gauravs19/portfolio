@@ -260,6 +260,11 @@ p {
     font-weight: bold;
 }
 
+.job-bullets li strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
 /* Newsletter Section */
 .newsletter-block {
     background-color: #f8fafc;
