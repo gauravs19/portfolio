@@ -236,6 +236,30 @@ p {
     line-height: 1.6;
 }
 
+/* Job Bullets */
+.job-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.job-bullets li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.job-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ccc;
+    font-weight: bold;
+}
+
 /* Newsletter Section */
 .newsletter-block {
     background-color: #f8fafc;
@@ -316,8 +340,6 @@ p {
 .section {
     padding: 2rem 0;
 }
-
-/* More vertical whitespace */
 
 .fade-in {
     opacity: 0;
