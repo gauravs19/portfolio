@@ -4,7 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Sharma | Solutions Architect</title>
+    <title>Gaurav Sharma | Principal Solutions Architect</title>
+    <meta name="description"
+        content="Gaurav Sharma — Principal Solutions Architect with 18 years of experience building high-scale distributed platforms across FinTech, Energy, and IoT. Based in India.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gaurav Sharma | Principal Solutions Architect">
+    <meta property="og:description"
+        content="18 years architecting cloud-native, distributed systems across FinTech, Energy & IoT. Engineering leader, Substack writer, GenAI practitioner.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gauravs19.github.io/portfolio/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gaurav Sharma | Principal Solutions Architect">
+    <meta name="twitter:description"
+        content="18 years architecting high-scale platforms. Engineering leader & Substack writer.">
+    <!-- Favicon: G monogram -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231e3a8a'/><text y='.9em' font-size='68' font-family='Inter,sans-serif' font-weight='700' fill='white' x='50%' text-anchor='middle' dy='0.1em' dominant-baseline='middle'>G</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -16,15 +32,17 @@
     <nav class="navbar fade-in">
         <div class="container nav-content">
             <span class="logo">Gaurav Sharma</span>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <a href="#summary">Summary</a>
                 <a href="#skills">Skills</a>
                 <a href="#work">Work</a>
                 <a href="#experience">Experience</a>
-
                 <a href="#writing">Writing</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -68,14 +86,14 @@
                         <li>Java / Spring Boot / Microservices</li>
                         <li>REST API Design · Angular · .NET</li>
                         <li>SQL / NoSQL / Oracle · IoT (LTE-M, MQTT)</li>
-                        <li><strong>GenAI · LLMs · Agentic AI Frameworks · RAG Pipelines</strong></li>
+                        <li>GenAI · LLMs · Agentic AI Frameworks · RAG Pipelines</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work" class="section alt-bg">
+    <section id="work" class="section">
         <div class="container">
             <h2 class="section-title">Selected Work</h2>
             <div class="work-grid">
