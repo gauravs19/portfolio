@@ -45,6 +45,8 @@ body {
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.05em;
+    text-decoration: none !important;
+    color: var(--text-primary) !important;
 }
 
 .nav-links a {
