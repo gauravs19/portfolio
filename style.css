@@ -2,8 +2,7 @@
     --bg-color: #ffffff;
     --text-primary: #111111;
     --text-secondary: #444444;
-    /* Darker secondary text for better readability */
-    --accent: #2563eb;
+    --accent: #1e3a8a;
     --border-light: #eaeaea;
     --font-stack: 'Inter', sans-serif;
 }
@@ -14,7 +13,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.7;
-    /* Increased line height for density readability */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -27,7 +25,14 @@ body {
 /* Navbar */
 .navbar {
     padding: 1.5rem 0;
-    border-bottom: 1px solid transparent;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-light);
+    transition: box-shadow 0.2s;
 }
 
 .nav-content {
@@ -54,6 +59,11 @@ body {
     color: var(--text-primary);
 }
 
+.nav-links a.active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
 /* Typography */
 h1 {
     font-size: 3.5rem;
@@ -64,15 +74,25 @@ h1 {
     color: var(--text-primary);
 }
 
+/* Hero subtitle tagline in accent blue */
+.hero h2.section-title {
+    color: var(--accent);
+    border-top: none;
+    padding-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* Fix #4: section-title as block with consistent border */
 h2.section-title {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     border-top: 1px solid var(--border-light);
     padding-top: 1rem;
-    display: inline-block;
+    display: block;
+    /* was inline-block — now full width */
 }
 
 p {
@@ -88,141 +108,42 @@ p {
 
 .summary {
     max-width: 700px;
-    /* Wider summary */
     font-size: 1.2rem;
-    /* Larger font */
     color: var(--text-secondary);
     margin-bottom: 2.5rem;
 }
 
 .summary p {
     margin-bottom: 1.5rem;
-    /* More spacing between paragraphs */
 }
 
-.tech-stack {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+/* Fix #2: Proper section padding */
+.section {
+    padding: 4rem 0;
 }
 
-.tech-stack span {
-    background: #f4f4f5;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #333;
-}
-
-/* Work Section (Grid) */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    /* Wider cards */
-    gap: 1.5rem;
-}
-
-.project-card {
-    border: 1px solid var(--border-light);
-    padding: 1.5rem;
-    /* More padding */
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    background: #fff;
-}
-
-.project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border-color: #ddd;
-}
-
-.project-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.4rem;
-    /* Larger headings */
-}
-
-.project-role {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
-
-.project-detail {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 1rem;
-}
-
-.project-tags {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 0.75rem;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: #888;
-}
-
-/* Philosophy Section */
 .alt-bg {
     background-color: #fafafa;
     border-top: 1px solid var(--border-light);
     border-bottom: 1px solid var(--border-light);
 }
 
-.three-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-/* Domain Expertise */
-.domain-grid {
+/* Skills */
+.two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
 }
 
-.domain-card {
-    padding: 1.75rem;
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
-    transition: box-shadow 0.2s;
-}
-
-.domain-card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-}
-
-.domain-icon {
-    font-size: 1.4rem;
+.feature-item i {
+    font-size: 1.5rem;
     color: var(--accent);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
-.domain-card h3 {
-    font-size: 1.05rem;
-    margin: 0 0 0.5rem 0;
-    font-weight: 600;
-}
-
-.domain-card p {
-    font-size: 0.93rem;
-    margin: 0;
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .domain-grid {
-        grid-template-columns: 1fr;
-    }
+.feature-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Selected Work */
@@ -235,6 +156,7 @@ p {
 .work-card {
     padding: 2rem;
     border: 1px solid var(--border-light);
+    border-top: 3px solid var(--accent);
     border-radius: 8px;
     background: #fff;
     transition: box-shadow 0.2s, transform 0.2s;
@@ -311,40 +233,42 @@ p {
     color: #334155;
 }
 
-@media (max-width: 768px) {
-    .work-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.feature-item i {
-    font-size: 1.5rem;
-    color: var(--accent);
-    margin-bottom: 1rem;
-}
-
-.feature-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.feature-item p {
-    font-size: 1rem;
-}
-
 /* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 162px;
+    /* aligns with the right edge of the year column */
+    top: 6px;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+    opacity: 0.25;
+}
+
 .timeline-item {
     display: grid;
     grid-template-columns: 180px 1fr;
-    /* Wider date column */
-    margin-bottom: 1.5rem;
-    /* More spacing between jobs */
+    margin-bottom: 3rem;
+    /* Fix #5: was 1.5rem, too tight */
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 160px;
+    top: 7px;
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0.5;
 }
 
 .timeline-item:last-child {
@@ -354,8 +278,10 @@ p {
 .timeline-item .year {
     font-weight: 600;
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 0;
+    padding-right: 28px;
+    /* space from the connector dot */
 }
 
 .role-details h3 {
@@ -405,31 +331,13 @@ p {
     font-weight: 700;
 }
 
-/* Newsletter Section */
+/* Newsletter / Writing Section */
 .newsletter-block {
     background-color: #f8fafc;
     border: 1px solid var(--border-light);
     padding: 2.5rem;
     border-radius: 8px;
     text-align: center;
-}
-
-.writing-topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    justify-content: center;
-}
-
-.writing-topics span {
-    font-size: 0.8rem;
-    background: #fff;
-    border: 1px solid var(--border-light);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    color: var(--text-secondary);
-    font-weight: 500;
 }
 
 .newsletter-content h3 {
@@ -453,6 +361,25 @@ p {
     font-size: 1.1rem;
 }
 
+.writing-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.writing-topics span {
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid var(--border-light);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Button */
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -499,9 +426,50 @@ p {
     color: var(--accent);
 }
 
-/* Utilities */
-.section {
-    padding: 2rem 0;
+/* Footer */
+.site-footer {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-light);
+    background: #fafafa;
+    text-align: center;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+}
+
+.footer-copy {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s;
 }
 
 .fade-in {
@@ -525,7 +493,7 @@ p {
     }
 }
 
-/* Mobile */
+/* Fix #8: Consolidated responsive breakpoints */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -534,6 +502,35 @@ p {
 
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.97);
+        flex-direction: column;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        gap: 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border-light);
+        font-size: 1rem;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     .timeline-item {
@@ -542,8 +539,21 @@ p {
         margin-bottom: 3rem;
     }
 
-    .three-col {
-        gap: 3rem;
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-block .links {
@@ -551,7 +561,13 @@ p {
         gap: 1.5rem;
     }
 
-    .project-grid {
-        grid-template-columns: 1fr;
+    .site-footer .container {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .navbar {
+        position: relative;
     }
 }
