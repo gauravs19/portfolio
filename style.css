@@ -59,6 +59,20 @@ body {
     color: var(--text-primary);
 }
 
+.nav-links a.nav-cv-btn {
+    border: 1px solid var(--accent);
+    padding: 0.4rem 1rem !important;
+    border-radius: 4px;
+    margin-left: 1.5rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.nav-links a.nav-cv-btn:hover {
+    background: var(--accent);
+    color: white !important;
+}
+
 .nav-links a.active {
     color: var(--accent);
     font-weight: 600;

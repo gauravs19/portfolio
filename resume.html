@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Gaurav Sharma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-primary: #111;
+            --text-secondary: #444;
+            --accent: #1e3a8a;
+            --border: #ddd;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.4;
+            /* Tightened from 1.5 */
+            margin: 0;
+            padding: 30px;
+            /* Reduced from 40px */
+            font-size: 9.5pt;
+            /* Reduced from 10pt */
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24pt;
+            letter-spacing: -0.02em;
+        }
+
+        .contact {
+            margin-top: 10px;
+            color: var(--text-secondary);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .summary {
+            margin: 20px 0;
+            background: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .summary p {
+            margin: 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 12pt;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .content {
+            color: var(--text-secondary);
+        }
+
+        .job {
+            margin-bottom: 12px;
+            /* Reduced from 20px */
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 11pt;
+            color: var(--text-primary);
+        }
+
+        .job-date {
+            color: var(--text-secondary);
+            font-size: 9pt;
+        }
+
+        .company {
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        ul {
+            margin: 5px 0 0 0;
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            color: var(--text-secondary);
+        }
+
+
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            a {
+                color: black !important;
+            }
+
+            header {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Gaurav Sharma</h1>
+            <div class="contact">
+                <span>📍 Noida, India</span>
+                <span>📞 (+91) 989 986 8295</span>
+                <span>✉️ <a href="mailto:gaurav.x.sharma19@gmail.com">gaurav.x.sharma19@gmail.com</a></span>
+                <span>🔗 <a href="https://linkedin.com/in/gauravs19">linkedin.com/in/gauravs19</a></span>
+            </div>
+        </header>
+
+        <section class="summary">
+            <p><strong>Solutions Architect | 18 Years Experience | Agentic AI Systems · Enterprise Scale · Strategic
+                    Presales</strong><br>
+                A high-leverage engineering leader specialized in architecting distributed platforms that bridge the gap
+                between legacy enterprise scale and modern <strong>Generative AI ecosystems</strong>. Proven track
+                record in <strong>Strategic Presales & Advisory</strong>, turning complex business requirements into
+                resilient, cost-optimized architectures that drive multi-million dollar outcomes.</p>
+        </section>
+
+        <h2>Strategic Capability & Technical Stack</h2>
+        <div class="section-grid">
+            <div class="label">AI & Emerging</div>
+            <div class="content">Agentic AI Orchestration, LLM RAG Pipelines, Vector Databases (Pinecone/Milvus), LLM
+                Observability & Testing, Prompt Engineering</div>
+        </div>
+        <div class="section-grid">
+            <div class="label">Distributed</div>
+            <div class="content">Microservices, Spring Boot, Spark, Databricks, Azure IoT Hub, AWS, Delta Lake, Kafka,
+                Event-Driven Architecture</div>
+        </div>
+        <div class="section-grid">
+            <div class="label">Consulting</div>
+            <div class="content">Strategic Presales, RFP Advisory, Solution Capability Mapping, Cost Optimization (P&L),
+                AI Governance & Compliance</div>
+        </div>
+
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Solutions Architect</span>
+                <span class="job-date">July 2019 – Present</span>
+            </div>
+            <div class="company">GlobalLogic (Noida, India)</div>
+            <ul>
+                <li>Led architecture for a multi-tenant IoT BMS with <strong>100K+ devices</strong> across global sites
+                    using Azure IoT Hub & Edge SDKs.</li>
+                <li>Designed an EAM Reliability Engine in Hitachi Lumada, processing 100K+ records with automated asset
+                    maintenance and predictive workflows.</li>
+                <li>Spearheading Agentic AI ecosystems and RAG pipelines for EAM to automate summarization and
+                    intervention triage.</li>
+                <li>Developed high-throughput classification systems and multi-tenant configuration migration platforms
+                    for global enterprise-scale tenants.</li>
+                <li>Lead technical advisor for RFP discovery and customer workshops in Japan, mapping technical
+                    solutions to multi-million dollar business opportunities.</li>
+                <li>Directed engineering efforts for <strong>24+ developers</strong>, owning the full SDLC and
+                    architecture review gates to maintain project KPIs above 90%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technical Manager / Architect</span>
+                <span class="job-date">Aug 2017 – July 2019</span>
+            </div>
+            <div class="company">Tavant Technologies (Noida, India)</div>
+            <ul>
+                <li>Directed the architecture of PRISM, a high-throughput Industrial IoT platform, leading two
+                    cross-functional teams from design to deployment.</li>
+                <li>Optimized CI/CD strategy to transition from monthly to <strong>weekly releases</strong> while
+                    managing a zero-downtime Angular migration.</li>
+                <li>Implemented SQMS standards leading to a successful <strong>CMMI Level 5</strong> assessment.</li>
+                <li>Created the "Estimation Abacus" framework for fixed-bid projects, significantly improving cross-team
+                    delivery predictability.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">SDE 2</span>
+                <span class="job-date">Dec 2015 – Aug 2017</span>
+            </div>
+            <div class="company">American Express (Gurugram, India / UK)</div>
+            <ul>
+                <li>Spearheaded payment milestone deliveries resulting in <strong>$11 Million USD</strong> in
+                    operational savings over a one-year period.</li>
+                <li>Led the cloud adoption strategy for AmEx Datacenters, reducing security vulnerabilities by
+                    <strong>50%</strong> through automated compliance gates.
+                </li>
+                <li>Managed production rollouts for a shared platform across three continents with 3000+ active
+                    enterprise users.</li>
+                <li>Architected API contracts and file formats for global virtual payment platforms, handling
+                    high-throughput real-time and batch reconciliation.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technical Lead</span>
+                <span class="job-date">Dec 2013 – Dec 2015</span>
+            </div>
+            <div class="company">Sopra-Steria (Noida, India)</div>
+            <ul>
+                <li>Headed the technical transition of a 20-application enterprise portfolio, managing knowledge
+                    transfer and team ramp-up for a high-stake client engagement.</li>
+                <li>Delivered multiple enterprise-grade use cases on Java/JSP, focusing on high-availability integration
+                    with external SOAP-based systems.</li>
+                <li>Solved critical JBOSS migration and memory leak issues; utilized JConsole and GC Viewer to optimize
+                    JVM performance.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Technology Analyst | Software Engineer</span>
+                <span class="job-date">Dec 2007 – Dec 2013</span>
+            </div>
+            <div class="company">Infosys Technologies Ltd. (Chandigarh, India / Salt Lake City, USA)</div>
+            <ul>
+                <li>Led on-site client discovery and offshore engineering collaboration for American Express (Utah),
+                    architecting global consumer data parsing modules.</li>
+                <li>Core engine contributor for American Express Gift Cards (BOL); implemented mission-critical features
+                    for its inaugural India launch.</li>
+                <li>Designed high-volume JMS and MDB systems for external interface modules, ensuring reliable
+                    asynchronous XML-based data exchange.</li>
+                <li>Authored HLD/LLD for vPayment applications, implementing complex versioning rules to manage
+                    concurrent enterprise client access.</li>
+            </ul>
+        </div>
+
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div>• Certified SAFe Agilist (2021)</div>
+            <div>• Certified Scrum Master (2016)</div>
+            <div>• Technical Architect Academy (2022)</div>
+            <div>• ITIL Foundation (2016)</div>
+        </div>
+
+        <h2>Education</h2>
+        <div class="section-grid" style="margin-bottom: 25px;">
+            <div class="label">2007</div>
+            <div class="content"><strong>Bachelor of Technology (EC)</strong> — UP Technical University</div>
+        </div>
+
+        <h2>Technical Ecosystem</h2>
+        <div class="cert-grid" style="font-size: 9pt; gap: 20px;">
+            <div>
+                <strong>AI & Emerging:</strong><br>
+                Agentic AI Orchestration, LLM RAG Pipelines, LangChain, Vector Databases (Pinecone/Milvus), LLM
+                Observability.
+            </div>
+            <div>
+                <strong>Architecture & Cloud:</strong><br>
+                Distributed Systems, Microservices, Event-Driven Design, AWS, Azure IoT Hub, Kafka, Docker, Kubernetes.
+            </div>
+            <div>
+                <strong>Data & Analytics:</strong><br>
+                Spark, Databricks, Delta Lake, SQL, NoSQL (MongoDB/Postgres), Data Engineering Pipelines.
+            </div>
+            <div>
+                <strong>Leadership & Strategy:</strong><br>
+                Strategic Presales, RFP Engineering, TCO Analysis, AI Governance, SAFe Agile, CMMI Level 5.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
