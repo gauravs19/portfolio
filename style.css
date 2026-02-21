@@ -409,9 +409,27 @@ p {
 .newsletter-block {
     background-color: #f8fafc;
     border: 1px solid var(--border-light);
-    padding: 1.5rem;
+    padding: 2.5rem;
     border-radius: 8px;
     text-align: center;
+}
+
+.writing-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.writing-topics span {
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid var(--border-light);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .newsletter-content h3 {
