@@ -111,10 +111,39 @@ p {
     font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: 2.5rem;
+    padding-left: 2rem;
+    border-left: 4px solid var(--accent);
+    /* Visual Anchor */
 }
 
 .summary p {
     margin-bottom: 1.5rem;
+}
+
+/* Currently Exploring Styles */
+.exploring-block {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.exploring-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-primary);
+}
+
+.exploring-item {
+    font-size: 0.85rem;
+    background: #f1f5f9;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 /* Fix #2: Proper section padding */
@@ -189,7 +218,8 @@ p {
 .feature-item i {
     font-size: 1.5rem;
     color: var(--accent);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    /* Tightened from 1rem */
 }
 
 .feature-item h3 {
@@ -254,7 +284,8 @@ p {
     font-size: 0.93rem;
     color: #444;
     background: #f8faff;
-    border-left: 3px solid var(--accent);
+    border-left: 2px solid var(--accent);
+    /* Softened from 3px */
     padding: 0.6rem 0.8rem;
     border-radius: 0 4px 4px 0;
     margin-bottom: 0.75rem;
