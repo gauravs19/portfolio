@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', highlightNav);
     highlightNav();
 
+    // Scroll-reveal
+    const revealObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); } });
+        },
+        { threshold: 0.08 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
     // Neural Canvas Animation
     const canvas = document.getElementById('neural-canvas');
     if (canvas) {
@@ -85,7 +94,20 @@ document.addEventListener('DOMContentLoaded', () => {
             particles.push(new Particle());
         }
 
+        let heroVisible = true;
+        let animFrameId = null;
+
+        const heroObserver = new IntersectionObserver(
+            ([entry]) => {
+                heroVisible = entry.isIntersecting;
+                if (heroVisible && !animFrameId) animFrameId = requestAnimationFrame(animate);
+            },
+            { threshold: 0 }
+        );
+        heroObserver.observe(canvas.parentElement);
+
         const animate = () => {
+            if (!heroVisible) { animFrameId = null; return; }
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             particles.forEach((p, i) => {
@@ -105,9 +127,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             });
-            requestAnimationFrame(animate);
+            animFrameId = requestAnimationFrame(animate);
         };
 
-        animate();
+        animFrameId = requestAnimationFrame(animate);
     }
 });
