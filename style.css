@@ -1069,6 +1069,14 @@ p {
     color: #93c5fd;
 }
 
+.hero-connect {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.38);
+    letter-spacing: 0.02em;
+    margin: -0.75rem 0 0 0;
+    font-style: italic;
+}
+
 .hero .exploring-label {
     color: rgba(255, 255, 255, 0.45);
 }
