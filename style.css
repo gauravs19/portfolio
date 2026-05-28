@@ -902,57 +902,31 @@ p {
     color: var(--accent);
 }
 
-/* ── Hero Trust Bar ── */
-.hero-trust-bar {
+/* ── Hero Domain Chips ── */
+.hero-domains {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    gap: 0.6rem;
     flex-wrap: wrap;
-    margin: 1.75rem 0 2.5rem 0;
-    padding: 1.25rem 1.5rem;
-    background: rgba(255,255,255,0.7);
-    border: 1px solid var(--border-light);
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
-    max-width: 600px;
+    margin: 1.5rem 0 2rem 0;
 }
 
-.htb-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.1rem;
-}
-
-.htb-num {
-    font-size: 1.7rem;
-    font-weight: 800;
+.hd-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border: 1px solid rgba(30, 58, 138, 0.2);
+    border-radius: 100px;
+    background: rgba(30, 58, 138, 0.05);
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--accent);
-    letter-spacing: -0.05em;
-    line-height: 1;
+    letter-spacing: -0.01em;
 }
 
-.htb-label {
-    font-size: 0.7rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    white-space: nowrap;
-}
-
-.htb-sep {
-    width: 1px;
-    height: 32px;
-    background: var(--border-light);
-    flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-    .hero-trust-bar {
-        gap: 1rem;
-        padding: 1rem;
-    }
-    .htb-num { font-size: 1.4rem; }
+.hd-chip i {
+    font-size: 0.78rem;
+    opacity: 0.75;
 }
 
 /* ── Skill context sentence ── */
