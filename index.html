@@ -58,9 +58,8 @@
             <div class="nav-links" id="nav-links">
                 <a href="#skills">Skills</a>
                 <a href="#work">Work</a>
-                <a href="#projects">Open Source & Writing</a>
+                <a href="#projects">Open Source</a>
                 <a href="#experience">Experience</a>
-                <a href="#writing">Writing</a>
                 <a href="#contact">Contact</a>
                 <a href="Gaurav_Sharma_CV.pdf" target="_blank" class="nav-cv-btn">CV</a>
             </div>
@@ -277,23 +276,23 @@
         </div>
     </section>
 
-    <section id="projects" class="section alt-bg reveal">
+    <section id="projects" class="section section-dark reveal">
         <div class="container">
             <div class="overline">Open Source</div>
-            <h2 class="section-heading">Six tools. Real problems.</h2>
-            <p class="section-intro">Six tools built to solve real problems in architecture governance, presales qualification, and platform engineering — all open source, all free.</p>
+            <h2 class="section-heading">Four tools. Real problems.</h2>
+            <p class="section-intro">Built to close the gaps I kept hitting — in architecture governance, presales qualification, and platform engineering. All open source, all free.</p>
             <div class="oss-ecosystem-bar">
                 <span class="oss-ecosystem-label">Part of the</span>
                 <a href="https://techtradeoff.github.io" target="_blank" class="oss-ecosystem-link">TechTradeoff OS &#8599;</a>
                 <span class="oss-ecosystem-label">&mdash; tools for senior tech professionals</span>
             </div>
-            <div class="oss-grid">
+            <div class="oss-grid oss-grid-2col">
 
                 <div class="oss-card">
-                    <div class="oss-card-tag">Architecture · LLM</div>
+                    <div class="oss-card-tag">Architecture · LLM + CLI + GitHub Action</div>
                     <div class="oss-card-icon"><i class="fas fa-sitemap"></i></div>
                     <h3>archpilot</h3>
-                    <p>Enterprise Architecture Standards Library. Turn any LLM into a Senior Enterprise Architect with 50+ rule files, templates, and personas encoding real enterprise constraints.</p>
+                    <p>LLMs produce generic architecture output with no awareness of enterprise constraints. archpilot fixes that: 50+ rule files and personas give any LLM the context to produce consistent, reviewable decisions. The CLI scaffolds ADRs, C4 narratives, and cross-cutting concern docs from your terminal in minutes. The GitHub Action scores every PR 0&ndash;100 against those standards automatically — governance without the ceremony.</p>
                     <div class="oss-card-links">
                         <a href="https://gauravs19.github.io/archpilot/" target="_blank" class="oss-btn-primary">Read &#8599;</a>
                         <a href="https://github.com/gauravs19/archpilot" target="_blank" class="oss-btn-ghost">GitHub</a>
@@ -301,30 +300,10 @@
                 </div>
 
                 <div class="oss-card">
-                    <div class="oss-card-tag">Architecture · CLI</div>
-                    <div class="oss-card-icon"><i class="fas fa-terminal"></i></div>
-                    <h3>archpilot-cli</h3>
-                    <p>Scaffold production-grade architecture documents from your terminal. From vague requirements to verifiable ADRs, C4 narratives, and cross-cutting concerns docs — in minutes.</p>
-                    <div class="oss-card-links">
-                        <a href="https://github.com/gauravs19/archpilot-cli" target="_blank" class="oss-btn-primary">GitHub &#8599;</a>
-                    </div>
-                </div>
-
-                <div class="oss-card">
-                    <div class="oss-card-tag">Architecture · GitHub Action</div>
-                    <div class="oss-card-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>archpilot-reviewer</h3>
-                    <p>Automated architecture governance on every Pull Request. Scores each artifact 0&ndash;100 against enterprise standards and posts findings as PR comments before they merge.</p>
-                    <div class="oss-card-links">
-                        <a href="https://github.com/gauravs19/archpilot-reviewer" target="_blank" class="oss-btn-primary">GitHub &#8599;</a>
-                    </div>
-                </div>
-
-                <div class="oss-card">
-                    <div class="oss-card-tag">Presales · Qualification</div>
+                    <div class="oss-card-tag">Presales · Deal Qualification</div>
                     <div class="oss-card-icon"><i class="fas fa-chart-bar"></i></div>
                     <h3>cadex</h3>
-                    <p>Browser-based deal qualification framework for IT consulting presales. Score risk across architecture complexity, delivery risk, and commercial dimensions before you invest in solutioning.</p>
+                    <p>Technical sellers over-invest in deals they can't win. cadex is a browser-based qualification framework that scores risk across architecture complexity, delivery confidence, and commercial dimensions — before a single slide is built. Use it to decide where to invest solutioning effort and when to walk away. Built from real presales patterns across enterprise IT engagements.</p>
                     <div class="oss-card-links">
                         <a href="https://gauravs19.github.io/cadex/" target="_blank" class="oss-btn-primary">Read &#8599;</a>
                         <a href="https://github.com/gauravs19/cadex" target="_blank" class="oss-btn-ghost">GitHub</a>
@@ -335,7 +314,7 @@
                     <div class="oss-card-tag">Presales · Playbook</div>
                     <div class="oss-card-icon"><i class="fas fa-book-open"></i></div>
                     <h3>presales-playbook</h3>
-                    <p>The missing manual for Solutions Architects and technical sellers. Discovery frameworks, architecture defense patterns, deal orchestration, and C-suite communication — all in one place.</p>
+                    <p>There's no manual for solutions architects navigating enterprise deals. This open playbook covers discovery frameworks, architecture defence patterns, stakeholder communication scripts, and how to run a technical win — not just respond to an RFP. Everything needed to own the deal, not just support it. cadex qualifies the opportunity; this playbook wins it.</p>
                     <div class="oss-card-links">
                         <a href="https://gauravs19.github.io/presales-playbook" target="_blank" class="oss-btn-primary">Read &#8599;</a>
                         <a href="https://github.com/gauravs19/presales-playbook" target="_blank" class="oss-btn-ghost">GitHub</a>
@@ -343,10 +322,10 @@
                 </div>
 
                 <div class="oss-card">
-                    <div class="oss-card-tag">Platform · Reference Arch</div>
+                    <div class="oss-card-tag">Platform · Reference Architecture</div>
                     <div class="oss-card-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>iiot-reference-architecture</h3>
-                    <p>Production-grade reference for Industrial IoT at 100K+ concurrent asset scale. 24 sections covering edge PLCs, telemetry pipelines, digital twins, and multi-tenant security patterns.</p>
+                    <p>Industrial IoT platforms at scale share the same hard problems: edge reliability, telemetry volume, digital twin synchronisation, multi-tenant security. This 24-section reference covers 100K+ concurrent asset deployments — from field PLCs to cloud analytics — with real architectural decisions, not whiteboard diagrams. Skip the 6-month architecture phase; the hard choices are already here.</p>
                     <div class="oss-card-links">
                         <a href="https://gauravs19.github.io/iiot-reference-architecture/" target="_blank" class="oss-btn-primary">Read &#8599;</a>
                         <a href="https://github.com/gauravs19/iiot-reference-architecture" target="_blank" class="oss-btn-ghost">GitHub</a>
@@ -453,53 +432,6 @@
 
 
 
-    <section id="writing" class="section reveal">
-        <div class="container">
-            <div class="overline">Thought Leadership</div>
-            <h2 class="section-heading">Tech Tradeoff on Substack</h2>
-            <div class="writing-layout">
-                <div class="writing-left">
-                    <p class="writing-sub">On Substack &nbsp;·&nbsp; by Gaurav Sharma</p>
-                    <p>Every architectural decision is a tradeoff. I write about the ones that matter — the choices behind distributed systems, how engineering cultures break and recover, and what 18 years of building global platforms has actually taught me.</p>
-                    <p>No fluff, no beginner content. Written for architects who already know the basics and need to make the hard call.</p>
-                    <a href="https://techtradeoff.substack.com/" target="_blank" class="btn writing-cta">Read on Substack &rarr;</a>
-                </div>
-                <div class="writing-right">
-                    <p class="writing-themes-label">Recurring themes</p>
-                    <div class="writing-theme-cards">
-                        <div class="wtc">
-                            <div class="wtc-icon">&#9965;</div>
-                            <div class="wtc-body">
-                                <div class="wtc-title">Architecture Tradeoffs</div>
-                                <div class="wtc-desc">Making million-dollar technical decisions under deadline with incomplete information — and surviving the fallout.</div>
-                            </div>
-                        </div>
-                        <div class="wtc">
-                            <div class="wtc-icon">&#128203;</div>
-                            <div class="wtc-body">
-                                <div class="wtc-title">Presales &amp; Technical Selling</div>
-                                <div class="wtc-desc">How architects win enterprise deals without becoming order-takers — solutioning, discovery, and defence.</div>
-                            </div>
-                        </div>
-                        <div class="wtc">
-                            <div class="wtc-icon">&#129302;</div>
-                            <div class="wtc-body">
-                                <div class="wtc-title">AI From Prototype to Prod</div>
-                                <div class="wtc-desc">What vendors won&rsquo;t tell you about LLMs in enterprise — RAG pipelines, agentic systems, and observability.</div>
-                            </div>
-                        </div>
-                        <div class="wtc">
-                            <div class="wtc-icon">&#9961;</div>
-                            <div class="wtc-body">
-                                <div class="wtc-title">Platform Engineering at Scale</div>
-                                <div class="wtc-desc">Distributed systems, data contracts, and the cost of scale — patterns that hold at 100K+ asset loads.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="contact" class="section reveal">
         <div class="container footer-content">
@@ -509,8 +441,11 @@
                 <p style="max-width: 600px; margin: 0 auto 0.5rem auto; color: var(--text-secondary);">
                     Working on an enterprise architecture challenge? Evaluating AI for production? Leading presales on a complex deal?
                 </p>
-                <p style="max-width: 560px; margin: 0 auto 2rem auto; color: var(--text-secondary);">
+                <p style="max-width: 560px; margin: 0 auto 1.5rem auto; color: var(--text-secondary);">
                     I work in these spaces daily. Let&rsquo;s compare notes — no pitches, no templates, just direct conversation.
+                </p>
+                <p style="max-width: 560px; margin: 0 auto 2rem auto; font-size: 0.9rem; color: #aaa;">
+                    I also write about architecture tradeoffs and enterprise AI on <a href="https://techtradeoff.substack.com/" target="_blank" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor;">Tech Tradeoff &rarr;</a>
                 </p>
                 <div class="links">
                     <a href="https://www.linkedin.com/in/gauravs19/" target="_blank" class="btn contact-btn contact-btn-linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
@@ -524,12 +459,7 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <span class="footer-name">Gaurav Sharma</span>
-            <div class="footer-links">
-                <a href="https://github.com/gauravs19" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/gauravs19/" target="_blank">LinkedIn</a>
-                <a href="https://techtradeoff.substack.com" target="_blank">Newsletter</a>
-                <a href="Gaurav_Sharma_CV.pdf" target="_blank">CV</a>
-            </div>
+            <a href="Gaurav_Sharma_CV.pdf" target="_blank" class="footer-cv-link">Download CV</a>
             <span class="footer-copy">&copy; 2026 &middot; Built with purpose, not a template.</span>
         </div>
     </footer>
