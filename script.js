@@ -85,8 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = '#2563eb55';
+                ctx.fillStyle = 'rgba(147, 197, 253, 0.6)';
+                ctx.shadowBlur = 6;
+                ctx.shadowColor = 'rgba(147, 197, 253, 0.35)';
                 ctx.fill();
+                ctx.shadowBlur = 0;
             }
         }
 
@@ -122,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ctx.beginPath();
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(p2.x, p2.y);
-                        ctx.strokeStyle = `rgba(37, 99, 235, ${0.2 * (1 - dist / 120)})`;
+                        ctx.strokeStyle = `rgba(147, 197, 253, ${0.18 * (1 - dist / 120)})`;
                         ctx.stroke();
                     }
                 }
