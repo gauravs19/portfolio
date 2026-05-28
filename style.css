@@ -562,22 +562,10 @@ p {
     text-align: center;
 }
 
-.site-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.footer-name {
-    font-weight: 600;
-    font-size: 0.8rem;
-    color: var(--text-primary);
-}
-
 .footer-copy {
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     color: #aaa;
+    font-style: italic;
 }
 
 /* Hamburger button */
