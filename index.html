@@ -43,7 +43,9 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231e3a8a'/><text y='.9em' font-size='68' font-family='Inter,sans-serif' font-weight='700' fill='white' x='50%' text-anchor='middle' dy='0.1em' dominant-baseline='middle'>G</text></svg>">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -71,7 +73,7 @@
     <header class="hero" id="summary">
         <canvas id="neural-canvas" class="hero-canvas"></canvas>
         <div class="container">
-            <h1 class="fade-in">I design platforms that scale, presales strategies that close, and AI systems that ship to production.</h1>
+            <h1 class="hero-heading fade-in">Platforms that scale.<br>Deals that <em>close.</em><br>AI beyond the demo.</h1>
             <div class="hero-domains fade-in delay-1">
                 <span class="hd-chip"><i class="fas fa-sitemap"></i> Enterprise Architecture</span>
                 <span class="hd-chip"><i class="fas fa-handshake"></i> Technical Presales</span>
@@ -98,7 +100,8 @@
 
     <section id="skills" class="section reveal">
         <div class="container">
-            <h2 class="section-title">What I Bring</h2>
+            <div class="overline">Capabilities</div>
+            <h2 class="section-heading">What I bring to every engagement</h2>
             <div class="two-col">
                 <div class="feature-item">
                     <i class="fas fa-code-branch"></i>
@@ -130,53 +133,44 @@
 
     <section id="principles" class="section alt-bg reveal">
         <div class="container">
-            <h2 class="section-title">Architecture Principles</h2>
-            <div class="principles-grid">
+            <div class="overline">Philosophy</div>
+            <h2 class="section-heading">How I think about hard problems</h2>
+            <div class="principles-connected">
 
-                <div class="principle-card">
+                <div class="principle-cell">
                     <div class="principle-number">01</div>
                     <h3>Architecture decisions are business decisions.</h3>
                     <p>Every technical tradeoff carries a cost — in delivery risk, operational overhead, or
                         time-to-market. I translate architecture into commercial outcomes that engineering leaders,
                         product owners, and C-suite sponsors can align on. Presales, RFPs, and advisory engagements have
                         made this muscle second nature.</p>
-                </div>
-
-                <div class="principle-card">
+                </div><div class="principle-cell">
                     <div class="principle-number">02</div>
                     <h3>Scale is designed in, not bolted on.</h3>
                     <p>Enterprise platforms serving millions of users across global markets don't survive retrofits.
                         From Hitachi's EAM suite to financial platforms processing millions of transactions, distributed
                         resilience, event-driven design, and data contracts aren't premature optimisation — they're
                         survival.</p>
-                </div>
-
-                <div class="principle-card">
+                </div><div class="principle-cell">
                     <div class="principle-number">03</div>
                     <h3>GenAI and LLMs are productivity infrastructure — not experiments.</h3>
                     <p>The ROI of GenAI isn't in demos. It's in measurable toil reduction: faster documentation,
                         intelligent triage, agentic orchestration of repetitive workflows. I treat LLM integration the
                         same way I treat cloud adoption — ruthlessly tied to process outcomes and productivity gains.
                     </p>
-                </div>
-
-                <div class="principle-card">
+                </div><div class="principle-cell">
                     <div class="principle-number">04</div>
                     <h3>Product engineering discipline makes consulting outcomes stick.</h3>
                     <p>Advisory that ends at the slide deck doesn't count. I stay hands-on through delivery — owning
                         architecture reviews, code-level decision gates, and cross-team alignment — because enterprise
                         software fails more often in execution than in design.</p>
-                </div>
-
-                <div class="principle-card">
+                </div><div class="principle-cell">
                     <div class="principle-number">05</div>
                     <h3>Cost discipline is an architectural virtue.</h3>
                     <p>I've driven multi-million dollar savings not by cutting corners, but by right-sizing
                         infrastructure, eliminating redundant integrations, and building systems that operations teams
                         can maintain. P&amp;L accountability has shaped how I design from day one.</p>
-                </div>
-
-                <div class="principle-card">
+                </div><div class="principle-cell">
                     <div class="principle-number">06</div>
                     <h3>The best architecture earns trust across every room.</h3>
                     <p>A solution engineers respect but executives won't fund, or that clients approve but delivery
@@ -190,7 +184,8 @@
 
     <section id="work" class="section reveal">
         <div class="container">
-            <h2 class="section-title">Selected Work</h2>
+            <div class="overline">Selected Work</div>
+            <h2 class="section-heading">Platforms &amp; systems I&rsquo;ve shipped</h2>
             <div class="work-grid">
 
                 <div class="work-card">
@@ -284,7 +279,8 @@
 
     <section id="projects" class="section alt-bg reveal">
         <div class="container">
-            <h2 class="section-title">Open Source Tools</h2>
+            <div class="overline">Open Source</div>
+            <h2 class="section-heading">Six tools. Real problems.</h2>
             <p class="section-intro">Six tools built to solve real problems in architecture governance, presales qualification, and platform engineering — all open source, all free.</p>
             <div class="oss-ecosystem-bar">
                 <span class="oss-ecosystem-label">Part of the</span>
@@ -361,97 +357,90 @@
 
     <section id="experience" class="section reveal">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
+            <div class="overline">Experience</div>
+            <h2 class="section-heading">18 years across enterprise</h2>
+            <div class="exp-list">
 
-                <div class="timeline-item">
-                    <span class="year">July 2019 - Present</span>
-                    <div class="role-details">
+                <div class="exp-row">
+                    <div class="exp-num">01</div>
+                    <div class="exp-content">
+                        <div class="exp-meta">
+                            <span class="exp-company">GlobalLogic</span>
+                            <span class="exp-date">July 2019 &ndash; Present</span>
+                        </div>
                         <h3>Solutions Architect</h3>
-                        <span class="company">GlobalLogic (Noida, India)</span>
                         <ul class="job-bullets">
-                            <li>Led architecture for a multi-tenant IoT BMS with <strong>100K+ devices</strong> across
-                                global sites using Azure IoT Hub & Edge SDKs.</li>
-                            <li>Designed an <strong>EAM Reliability Engine</strong> in Hitachi Lumada, processing 100K+
-                                records with automated asset maintenance and predictive workflows.</li>
-                            <li>Spearheading <strong>Agentic AI ecosystems</strong> and <strong>RAG pipelines</strong>
-                                for EAM to automate summarization and intervention triage.</li>
-                            <li>Developed high-throughput classification systems and multi-tenant configuration
-                                migration platforms for global enterprise-scale tenants.</li>
-                            <li>Lead technical advisor for <strong>RFP discovery</strong> and customer workshops in
-                                Japan, mapping technical solutions to multi-million dollar business opportunities.</li>
-                            <li>Directed engineering efforts for <strong>24+ developers</strong>, owning the full SDLC
-                                and architecture review gates to maintain project KPIs above 90%.</li>
+                            <li>Led architecture for a multi-tenant IoT BMS with <strong>100K+ devices</strong> across global sites using Azure IoT Hub &amp; Edge SDKs.</li>
+                            <li>Designed an <strong>EAM Reliability Engine</strong> in Hitachi Lumada, processing 100K+ records with automated asset maintenance and predictive workflows.</li>
+                            <li>Spearheading <strong>Agentic AI ecosystems</strong> and <strong>RAG pipelines</strong> for EAM to automate summarization and intervention triage.</li>
+                            <li>Lead technical advisor for <strong>RFP discovery</strong> and customer workshops in Japan, mapping technical solutions to multi-million dollar business opportunities.</li>
+                            <li>Directed engineering efforts for <strong>24+ developers</strong>, owning the full SDLC and architecture review gates to maintain project KPIs above 90%.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="year">Aug 2017 - July 2019</span>
-                    <div class="role-details">
+                <div class="exp-row">
+                    <div class="exp-num">02</div>
+                    <div class="exp-content">
+                        <div class="exp-meta">
+                            <span class="exp-company">Tavant Technologies</span>
+                            <span class="exp-date">Aug 2017 &ndash; July 2019</span>
+                        </div>
                         <h3>Technical Manager / Architect</h3>
-                        <span class="company">Tavant Technologies (Noida, India)</span>
                         <ul class="job-bullets">
-                            <li>Directed the architecture of PRISM, a high-throughput Industrial IoT platform, leading
-                                two cross-functional teams from design to deployment.</li>
-                            <li>Optimized CI/CD strategy to transition from monthly to <strong>weekly releases</strong>
-                                while managing a zero-downtime Angular migration.</li>
-                            <li>Implemented SQMS standards leading to a successful <strong>CMMI Level 5</strong>
-                                assessment.</li>
-                            <li>Created the "Estimation Abacus" framework for fixed-bid projects, significantly
-                                improving cross-team delivery predictability.</li>
+                            <li>Directed architecture of PRISM — a high-throughput Industrial IoT platform — leading two cross-functional teams from design to deployment.</li>
+                            <li>Optimized CI/CD to transition from monthly to <strong>weekly releases</strong> while managing a zero-downtime Angular migration.</li>
+                            <li>Implemented SQMS standards leading to a successful <strong>CMMI Level 5</strong> assessment.</li>
+                            <li>Created the "Estimation Abacus" framework for fixed-bid projects, improving cross-team delivery predictability.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="year">Dec 2015 - Aug 2017</span>
-                    <div class="role-details">
-                        <h3>SDE 2</h3>
-                        <span class="company">American Express (Gurugram, India / UK)</span>
+                <div class="exp-row">
+                    <div class="exp-num">03</div>
+                    <div class="exp-content">
+                        <div class="exp-meta">
+                            <span class="exp-company">American Express</span>
+                            <span class="exp-date">Dec 2015 &ndash; Aug 2017</span>
+                        </div>
+                        <h3>SDE 2 &ndash; Tech Lead</h3>
                         <ul class="job-bullets">
-                            <li>Spearheaded payment milestone deliveries resulting in <strong>$11 Million USD</strong>
-                                in operational savings over a one-year period.</li>
-                            <li>Led the cloud adoption strategy for AmEx Datacenters, reducing security vulnerabilities
-                                by <strong>50%</strong> through automated compliance gates.</li>
-                            <li>Managed production rollouts for a shared platform across three continents with 3000+
-                                active enterprise users.</li>
-                            <li>Architected API contracts and file formats for global virtual payment platforms,
-                                handling high-throughput real-time and batch reconciliation.</li>
+                            <li>Spearheaded payment milestone deliveries resulting in <strong>$11M USD</strong> in operational savings over a one-year period.</li>
+                            <li>Led cloud adoption strategy for AmEx Datacenters, reducing security vulnerabilities by <strong>50%</strong> through automated compliance gates.</li>
+                            <li>Managed production rollouts for a shared platform across three continents with <strong>3,000+</strong> active enterprise users.</li>
+                            <li>Architected API contracts for global virtual payment platforms handling high-throughput real-time and batch reconciliation.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="year">Dec 2013 - Dec 2015</span>
-                    <div class="role-details">
+                <div class="exp-row">
+                    <div class="exp-num">04</div>
+                    <div class="exp-content">
+                        <div class="exp-meta">
+                            <span class="exp-company">Sopra Steria</span>
+                            <span class="exp-date">Dec 2013 &ndash; Dec 2015</span>
+                        </div>
                         <h3>Technical Lead</h3>
-                        <span class="company">Sopra Steria (Noida Area, India)</span>
                         <ul class="job-bullets">
-                            <li>Headed the technical transition of a 20-application enterprise portfolio, managing
-                                knowledge transfer and team ramp-up for a high-stake client engagement.</li>
-                            <li>Delivered multiple enterprise-grade use cases on Java/JSP, focusing on high-availability
-                                integration with external SOAP-based systems.</li>
-                            <li>Solved critical JBOSS migration and memory leak issues; utilized JConsole and GC Viewer
-                                to optimize JVM performance.</li>
+                            <li>Headed technical transition of a 20-application enterprise portfolio, managing knowledge transfer and team ramp-up for a high-stake client engagement.</li>
+                            <li>Delivered enterprise-grade integrations on Java/JSP with external SOAP-based systems at high availability.</li>
+                            <li>Resolved critical JBoss migration and memory leak issues using JConsole and GC Viewer to optimize JVM performance.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="year">Dec 2007 - Dec 2013</span>
-                    <div class="role-details">
-                        <h3>Technology Analyst | Software Engineer</h3>
-                        <span class="company">Infosys Technologies Ltd. (Chandigarh, India / Salt Lake City, USA)</span>
+                <div class="exp-row">
+                    <div class="exp-num">05</div>
+                    <div class="exp-content">
+                        <div class="exp-meta">
+                            <span class="exp-company">Infosys Technologies</span>
+                            <span class="exp-date">Dec 2007 &ndash; Dec 2013</span>
+                        </div>
+                        <h3>Technology Analyst / Software Engineer</h3>
                         <ul class="job-bullets">
-                            <li>Led on-site client discovery and offshore engineering collaboration for <strong>American
-                                    Express</strong> (Utah), architecting global consumer data parsing modules.</li>
-                            <li>Core engine contributor for <strong>American Express Gift Cards (BOL)</strong>;
-                                implemented mission-critical features for its inaugural India launch.</li>
-                            <li>Designed high-volume JMS and MDB systems for external interface modules, ensuring
-                                reliable asynchronous XML-based data exchange.</li>
-                            <li>Authored HLD/LLD for vPayment applications, implementing complex versioning rules to
-                                manage concurrent enterprise client access.</li>
+                            <li>Led on-site client discovery for <strong>American Express</strong> (Utah), architecting global consumer data parsing modules.</li>
+                            <li>Core contributor for <strong>AmEx Gift Cards (BOL)</strong> — implemented mission-critical features for its inaugural India launch.</li>
+                            <li>Designed high-volume JMS and MDB systems for external interfaces ensuring reliable async XML-based data exchange.</li>
                         </ul>
                     </div>
                 </div>
@@ -464,10 +453,10 @@
 
     <section id="writing" class="section reveal">
         <div class="container">
-            <h2 class="section-title">Thought Leadership</h2>
+            <div class="overline">Thought Leadership</div>
+            <h2 class="section-heading">Tech Tradeoff on Substack</h2>
             <div class="writing-layout">
                 <div class="writing-left">
-                    <h3>Tech Tradeoff</h3>
                     <p class="writing-sub">On Substack &nbsp;·&nbsp; by Gaurav Sharma</p>
                     <p>Every architectural decision is a tradeoff. I write about the ones that matter — the choices behind distributed systems, how engineering cultures break and recover, and what 18 years of building global platforms has actually taught me.</p>
                     <p>No fluff, no beginner content. Written for architects who already know the basics and need to make the hard call.</p>
@@ -513,7 +502,8 @@
     <section id="contact" class="section reveal">
         <div class="container footer-content">
             <div class="contact-block">
-                <h2>Let&rsquo;s Connect</h2>
+                <div class="overline">Get in Touch</div>
+                <h2 class="section-heading">Let&rsquo;s compare notes</h2>
                 <p style="max-width: 600px; margin: 0 auto 0.5rem auto; color: var(--text-secondary);">
                     Working on an enterprise architecture challenge? Evaluating AI for production? Leading presales on a complex deal?
                 </p>
